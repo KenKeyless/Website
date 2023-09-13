@@ -7,21 +7,26 @@
 
 /* Body styles */
 body {
-    background-color: #000;
-    color: #fff;
+    background-color:#cccccc;
+    color:black;
     font-family: 'Courier New', monospace;
     text-align: center;
     padding: 20px;
 }
 
+/* Change the title color */
+h3{
+    color: #0000aa; /* Set title color */
+}
 /* Banner styles */
 header {
-    background-color: #000;
-    color: #fff;
+    background-color:#cccccc;
+    color:Grey;
 }
 
 /* Navigation Bar styles */
 nav {
+text-align: center;
     background-color: #000;
     color: #fff;
 }
@@ -37,12 +42,18 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    margin: 0 10px; /* Adjust the margin as needed */
+    color: #0000aa;
+}
+
+
+nav h3 {
+    color: black;
 }
 
 /* Add this CSS rule to make the text smaller */
 .small-text p {
-    font-size: 10px; /* Adjust the font size as needed */
+    font-size: 11px; /* Adjust the font size as needed */
 }
 
 /* Main Content Container styles */
@@ -66,8 +77,8 @@ nav a {
 /* Right Navigation Bar / Recent Projects styles */
 .right-column {
     width: 20%; /* Adjust the width as needed */
-    background-color: #000;
-    color: #fff;
+    background-color: #cccccc;
+    color: black;
     padding: 20px;
 }
 
@@ -92,14 +103,11 @@ footer {
 
 /* Add a blinking cursor animation */
 @keyframes blink {
-    0% {
+    0%, 100% {
         border-right: 0.2em solid transparent; /* Invisible cursor */
     }
     50% {
-        border-right: 0.3em solid #fff; /* Visible cursor */
-    }
-    100% {
-        border-right: 0.2em solid transparent; /* Invisible cursor */
+        border-right-color: #0000aa; /* Visible cursor */
     }
 }
 
@@ -107,8 +115,37 @@ footer {
 .terminal-cursor {
     display: inline-block;
     font-family: 'Courier New', monospace;
-    color: #fff;
+    color: black;
     animation: blink 1s step-end infinite;
+}
+
+
+
+/* Styling for normal links */
+a {
+    color: #0000aa; /* Commodore 64 blue color */
+    text-decoration: underline; /* Add underline */
+    font-weight: normal; /* Set normal font weight */
+    transition: color 0.3s, font-weight 0.3s; /* Smooth color and font weight transition */
+}
+
+/* Styling for links on hover */
+a:hover {
+    color: #0000aa; /* Change to blue on hover */
+    font-weight: bold; /* Make them bold on hover */
+}
+
+/* Styling for visited links */
+a:visited {
+    color: purple; /* Purple color for visited links */
+    font-weight: bold; /* Make them bold after being clicked */
+}
+
+/* Styling for links inside the project titles */
+.project a {
+    text-decoration: none; /* Remove underline */
+    color: #0000aa; /* Set link color (Commodore 64 blue) */
+    font-weight: bold; /* Make the links bold */
 }
 
 
