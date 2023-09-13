@@ -1,5 +1,5 @@
 // Typing effect content
-const typingTitle = "Welcome to my blog";
+const typingTitle = "Welcome to my website";
 
 // Function to display the typing effect
 function startTyping() {
@@ -45,12 +45,9 @@ function showIpDetails() {
                 ipDetails.innerHTML = `
                     <p>${data.version}: ${data.ip}</p>
                     <p>Country: ${data.country_name}</p>
+                    <p>Timezone: ${data.timezone}</p>
                     <p>Region: ${data.region}</p>
                     <p>City: ${data.city}</p>
-                    <p>ZIP Code: ${data.postal}</p>
-                    <p>Cord: ${data.latitude}, ${data.longitude}</p> <!-- Display latitude and longitude together -->
-
-                    <p>Timezone: ${data.timezone}</p>
                     <p>ISP: ${data.org}</p>
                     <p>Browser: ${navigator.userAgent}</p>
                 `;
@@ -64,6 +61,7 @@ function showIpDetails() {
 
 // Call the function when the page loads
 window.addEventListener('load', showIpDetails);
+
 
 
 
